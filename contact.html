@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js"></script>
+    <title>MASKER</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1 class="logo">
+        <a href="index.html">
+          <img src="images/logo2.JPG" alt="masker" />
+        </a>
+      </h1>
+      <div class="top_bar">
+        <ul>
+          <li>
+            <a href="index.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="index.html">ANTI-VIRUS</a>
+          </li>
+          <li>
+            <a href="index.html">FASHION</a>
+          </li>
+          <li>
+            <a href="index.html">OTHERS</a>
+          </li>
+          <li>
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="container">
+      <div id="contact_cnt">
+        <h2>CONTACT</h2>
+        <div class="userinfo">
+          <form action="https://httpbin.org/post" method="post">
+            <p>
+              <label for="firstname">First Name: </label>
+              <input id="firstname" type="text" name="firstname" />
+            </p>
+            <p>
+              <label for="lastname">Last Name: </label>
+              <input id="lastname" type="text" name="lastname" />
+            </p>
+            <p>
+              <label for="email">Email: </label>
+              <input id="email" type="email" name="email" />
+            </p>
+            <p>
+              <label for="address">Address: </label>
+              <input id="address" type="text" name="address" />
+            </p>
+            <p>
+              <label for="city">City: </label>
+              <input id="city" type="text" list="cities" name="city" autocomplete="on" />
+              <datalist id="cities">
+                <option value="Brampton"></option>
+                <option value="Burlington"></option>
+                <option value="Cambridge"></option>
+                <option value="Conrwall"></option>
+                <option value="Guelph"></option>
+                <option value="Hamilton"></option>
+                <option value="Kingston"></option>
+                <option value="Mississauga"></option>
+                <option value="Ottawa"></option>
+                <option value="Richmond Hill"></option>
+                <option value="Toronto"></option>
+                <option value="Vaughan"></option>
+              </datalist>
+            </p>
+            <p>
+              <label for="phonenumber">Phone Number: </label>
+              <input
+                id="phonenumber"
+                type="tel"
+                name="phonenumber"
+                placeholder="888-888-8888"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              />
+            </p>
+            <p>
+              <label for="postalcode">Postal Code: </label>
+              <input
+                id="postalcode"
+                type="text"
+                name="postalcode"
+                placeholder="A0A 0A0"
+                required
+                pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]"
+              />
+            </p>
+            <p>
+              Would you like to be phoned? <input type="checkbox" name="bephoned" />Yes
+              <input type="checkbox" name="bephoned" value="no" />No
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="message"
+                value="Question"
+                onclick="displayOrderNum2()"
+              />Question
+              <input
+                type="radio"
+                name="message"
+                value="Comment"
+                onclick="displayOrderNum2()"
+              />Comment
+              <input type="radio" name="message" value="OrderP" onclick="displayOrderNum()" />Order
+              Problem
+            </p>
+            <p id="orderNum" style="display:none">
+              Order Number:
+              <input type="text" name="orderNum" />
+            </p>
+            <p>
+              <textarea name="message_text" cols="40" rows="5"></textarea>
+            </p>
+            <p>
+              <input type="hidden" name="name" value="Ji Hyeon You" />
+            </p>
+            <p>
+              <input type="submit" value="submit" />
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="subscribe">
+        <form action="https://formspree.io/xwknpazk" method="POST">
+          <br /><br /><br /><br />
+          your email:
+          <input type="email" name="_replyto" />
+          <input type="submit" value="Subscribe" style="background-color:#45315D; color:white;" />
+        </form>
+        <br />
+      </div>
+      <div class="logo2">
+        <a href="#">
+          <img src="images/logo3.JPG" alt="logo2" />
+        </a>
+      </div>
+      <div class="toEmail">
+        <a href="mailto:jhyou2@myseneca.ca">jhyou2@myseneca.ca</a>
+        <br /><br /><br /><br />
+      </div>
+    </div>
+  </body>
+</html>

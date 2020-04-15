@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&family=Sen:wght@700&display=swap');
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Sen', sans-serif;
+font-family: 'Lora', serif;
+
+color:
+#EEEEEE - light grey (footer background)
+#393E46 - light black (footer font)
+#45315D - dark purple / point color (footer logo)
+*/
+
+html {
+  background-color: rgb(216, 217, 222);
+}
+
+#header .logo {
+  text-align: center;
+}
+
+#header img {
+  width: 300px;
+  height: auto;
+}
+
+#header .top_bar {
+  position: relative;
+  width: 600px;
+  margin: 10px auto 25px;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top_bar li {
+  display: inline-flex;
+  padding: 0 15px;
+}
+
+.top_bar li a {
+  color: black;
+  text-decoration: none;
+}
+
+.top_bar li a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+/*CONTENSTS*/
+#container {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+}
+
+#banner img {
+  width: 100%;
+}
+
+.contents {
+  margin: 15px 10% auto 5%;
+}
+
+.category {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.filter {
+  display: inline-flex;
+  flex-flow: wrap;
+  padding: 0 10px;
+}
+
+.hide {
+  display: none;
+}
+.contents img {
+  width: 200px;
+  height: 250px;
+}
+
+.conents a {
+  color: black;
+  text-decoration: none;
+}
+
+.contents a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+/*FOOTER*/
+#footer {
+  text-align: center;
+  margin: 80px auto 0;
+  font-family: 'Sen', sans-serif;
+  font-size: 13px;
+  background-color: white;
+  color: #45315d;
+}
+
+.toEmail a {
+  color: #45315d;
+  text-decoration: none;
+}
+
+/*CONTACT*/
+label {
+  display: inline-block;
+  width: 105px;
+  text-align: right;
+}
