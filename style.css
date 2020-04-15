@@ -23,12 +23,18 @@ html {
 }
 
 #header .top_bar {
-  position: relative;
+  position: inline-flex;
   width: 600px;
   margin: 10px auto 25px;
   text-align: center;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (orientation: portrait){
+  .top_bar{
+    font-size: 100px;
+  }
 }
 
 .top_bar li {
