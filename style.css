@@ -23,17 +23,26 @@ html {
 }
 
 #header .top_bar {
-  position: inline-flex;
-  width: 600px;
+  position: display;
+  width: 100%;
   margin: 10px auto 25px;
   text-align: center;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
 }
 
-@media only screen and (orientation: portrait){
-  .top_bar{
-    font-size: 100px;
+@media (orientation: portrait){
+  #header .top_bar {
+    font-size: 2vw;
+  }
+  .contents {
+    font-size: 2vw;
+  }
+  .contents img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    max-height: 187.5px;
   }
 }
 
@@ -114,6 +123,12 @@ html {
   color: #45315d;
   text-decoration: none;
 }
+
+.logo2 img {
+  width: 300px;
+  height: auto;
+}
+
 
 /*CONTACT*/
 label {
