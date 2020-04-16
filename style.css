@@ -46,8 +46,10 @@ html {
   }
 }
 
+
 .top_bar li {
   display: inline-flex;
+  flex-wrap: nowrap;   /*to make it on one line*/
   padding: 0 15px;
 }
 
@@ -76,6 +78,11 @@ html {
 
 .contents {
   margin: 15px 10% auto 5%;
+  display: inline-flex;
+  flex-flow: wrap;
+  flex-shrink: 2;
+  justify-content: space-evenly;
+
 }
 
 .category {
@@ -86,8 +93,6 @@ html {
 }
 
 .filter {
-  display: inline-flex;
-  flex-flow: wrap;
   padding: 0 10px;
 }
 
