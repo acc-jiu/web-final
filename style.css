@@ -139,7 +139,7 @@ label {
   }
   .contents img {
     width: 100%;
-    height: 100%;
+    height: auto;
     max-width: 150px;
     max-height: 150px;
   }
